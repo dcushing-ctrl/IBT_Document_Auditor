@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T14:34:14.080Z",
+  "updatedAt": "2026-06-29T09:32:10.961Z",
   "createdAt": "2026-05-29T15:08:18.058Z",
   "id": "XBkjGlpuakj2hdf6",
   "name": "Document auditor_MASTER_WIP_V2",
@@ -1549,6 +1549,20 @@
           "name": "Google Sheets account 98"
         }
       }
+    },
+    {
+      "id": "7959e98d-3928-4884-b71e-848f208228b4",
+      "name": "Track Time Saved",
+      "type": "n8n-nodes-base.timeSaved",
+      "typeVersion": 1,
+      "position": [
+        5696,
+        -160
+      ],
+      "parameters": {
+        "mode": "once",
+        "minutesSaved": 10
+      }
     }
   ],
   "connections": {
@@ -1925,21 +1939,34 @@
           }
         ]
       ]
+    },
+    "Append row in sheet": {
+      "main": [
+        [
+          {
+            "node": "Track Time Saved",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
     "executionOrder": "v1",
     "binaryMode": "separate",
-    "availableInMCP": false
+    "availableInMCP": false,
+    "timeSavedMode": "dynamic",
+    "callerPolicy": "workflowsFromSameOwner"
   },
   "staticData": null,
   "meta": {
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "b39e81a6-2ba9-44e7-b79f-fd823a22942b",
+  "versionId": "0c86f82e-2f8b-489b-84cd-3f0fbbe0fe7a",
   "activeVersionId": null,
-  "versionCounter": 418,
+  "versionCounter": 421,
   "triggerCount": 0,
   "shared": [
     {
@@ -1960,6 +1987,13 @@
       }
     }
   ],
-  "tags": [],
+  "tags": [
+    {
+      "updatedAt": "2026-06-23T09:36:45.546Z",
+      "createdAt": "2026-06-23T09:36:45.546Z",
+      "id": "dTGVvq8yl1M9ZLbJ",
+      "name": "cpt_time_saved_updated"
+    }
+  ],
   "activeVersion": null
 }
