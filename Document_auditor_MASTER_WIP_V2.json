@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T09:32:10.961Z",
+  "updatedAt": "2026-07-01T11:56:24.046Z",
   "createdAt": "2026-05-29T15:08:18.058Z",
   "id": "XBkjGlpuakj2hdf6",
   "name": "Document auditor_MASTER_WIP_V2",
@@ -464,6 +464,26 @@
             {
               "id": "Check4_Packaging",
               "displayName": "Check4_Packaging",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "BL_Packages",
+              "displayName": "BL_Packages",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "PL_Packages",
+              "displayName": "PL_Packages",
               "required": false,
               "defaultMatch": false,
               "display": true,
@@ -1551,6 +1571,9 @@
       }
     },
     {
+      "parameters": {
+        "minutesSaved": 10
+      },
       "id": "7959e98d-3928-4884-b71e-848f208228b4",
       "name": "Track Time Saved",
       "type": "n8n-nodes-base.timeSaved",
@@ -1558,11 +1581,7 @@
       "position": [
         5696,
         -160
-      ],
-      "parameters": {
-        "mode": "once",
-        "minutesSaved": 10
-      }
+      ]
     }
   ],
   "connections": {
@@ -1964,9 +1983,9 @@
     "templateCredsSetupCompleted": true
   },
   "pinData": {},
-  "versionId": "0c86f82e-2f8b-489b-84cd-3f0fbbe0fe7a",
+  "versionId": "9ccf7956-709a-4e84-8cca-1801a1e3145a",
   "activeVersionId": null,
-  "versionCounter": 421,
+  "versionCounter": 423,
   "triggerCount": 0,
   "shared": [
     {
